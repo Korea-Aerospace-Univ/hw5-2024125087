@@ -1,4 +1,6 @@
-int main()
+#include <stdio.h>
+
+int main(void)
 {
     int price = 0;
     int found = 0;
