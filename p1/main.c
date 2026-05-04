@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 int main()
 {
     int price = 0;
@@ -13,15 +11,15 @@ int main()
             for (C = 1; C <= price / 200; C++) {
                 if (900*A + 750*B + 200*C == price) {
                     if (C < A || C < B) {
-                    printf("%d %d %d\n", A, B, C);
-                    found = 1;
+                        printf("%d %d %d\n", A, B, C);
+                        found = 1;
                     }
                 }
             }
         }
     }
     
-    if (found != 1)
+    if (found == 0)
         printf("none\n");
         
     return 0;
